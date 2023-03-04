@@ -22,13 +22,8 @@ void initMap(int n, int m){
             numOfbombs --;
         }
     }
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            cout << gameMap[i][j] << " ";
-        }
-        cout << endl;
-    }
 }
+
 int checkBombs(int x, int y){
     int surroundBombs = 0;
     if(gameMap[x][y] == -1){
