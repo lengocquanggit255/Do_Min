@@ -79,7 +79,19 @@ int main(){
     }
     input();
     
-if(k <= 10)cout << "GAME OVER!";
-    
+    if(k <= 10){
+        cout << "GAME OVER!" << endl;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                if(gameMap[i][j] == -1)cout << gameMap[i][j] << " ";
+                else cout << "*" << " ";
+            }
+            cout << endl;
+            
+        }
+        
+    }
 return 0;
 }
